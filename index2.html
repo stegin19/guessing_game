@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="main">
+    <div class="secondmain">
+        <h2>Guess the number</h2>
+        <div class="label">
+        <label for="">Enter the number</label>
+        <input type="number" name="" id="number">
+    </div>
+        <button onclick="find()">CHECK</button>
+ 
+        <p id="guessed" style="font-size: larger;"></p>
+        <p id="count" style="font-size: larger;"></p>
+
+    </div>
+</body>
+
+<script>
+   
+   guess=Math.floor(Math.random()*100)
+console.log(guess)
+   count=10;
+  
+  function  find(){
+    if(count>1){
+        
+          number=document.getElementById("number").value;
+
+          if(number<guess){
+            count--;
+            document.getElementById("guessed").textContent="greater";
+            document.getElementById("count").textContent="lives remaining:"+count;
+          }
+
+          else if(number>guess){
+            count--;
+            document.getElementById("guessed").textContent="lesser";
+            document.getElementById("count").textContent="lives remaining:"+count;
+          }
+
+          else if(guess==number){
+            count--;
+            document.getElementById("guessed").textContent="you won";
+            // window.location.href="./index3.html"
+            // document.getElementById("won").textContent="YOU WON";
+            alert("YOU WON")
+            window.location.reload();
+          }
+    }
+    else{
+        document.getElementById("guessed").textContent="you lost";
+            document.getElementById("count").textContent="lives remaining: 0";
+            alert("YOU LOST")
+            window.location.reload();
+            
+            // window.location.href="./index3.html"
+            // document.getElementById("won").textContent="YOU LOST";
+          
+    }
+
+
+   }
+  
+</script>
+</html>

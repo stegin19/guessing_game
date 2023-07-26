@@ -1,0 +1,94 @@
+.first{
+    display: flex;
+    position: relative;
+    /* border: 1px solid; */
+    justify-content: center;
+    height: 270px;
+    width: 390px;
+    margin-left: 36%;
+    margin-top: 15%;
+    background-color: aliceblue;
+    opacity: 60%;
+    border-radius: 10% 10% 10% 10% ;
+}
+
+.firsttext{
+    color: rgb(0, 4, 7);
+    position: absolute;
+    font-size:xx-large;
+    margin-top: 25%;
+    scale: 1.5;
+    opacity: 100%;
+
+}
+
+.firstbutton{
+    position: absolute;
+    margin-top: 39%;
+    margin-left: 0%;
+    scale: 1.4;
+}
+.secondmain{
+    display: flex;
+    margin-top: 10%;
+    margin-left: 38%;
+    /* border: 1px solid; */
+    height: 360px;
+    justify-content: center;
+    width: 450px;
+    background-color: aliceblue;
+    opacity: 60%;
+    border-radius: 10% 10% 10% 10%;
+}
+
+.label{
+    color: black;
+    position: absolute;
+    margin-top: 7%;
+
+}
+button{
+    position: absolute;
+    margin-top: 12%;
+}
+
+#guessed{
+    /* display: flex; */
+    position: absolute;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+    /* border: 1px solid; */
+    height: 5%;
+    width: 30%;
+    margin-top: 15%;
+
+}
+
+#count{
+    /* display: flex; */
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    /* border: 1px solid; */
+    height: 5%;
+    width: 30%;
+    margin-top: 19%;
+
+}
+
+.main{
+    background: url(./asset/blue.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+h2{
+    color: black;
+}
+
+#guessed,#count{
+    color: black;
+}
